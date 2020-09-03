@@ -1,4 +1,6 @@
-class Data {
+import java.util.Arrays;
+
+class Variables {
 
     void example () {
 
@@ -15,6 +17,7 @@ class Data {
 
         // Default values
         // Does not apply to local variables, those will have to be initialised.
+        // Be explicit and always initialise anyway.
         byte a1 = 0;
         short b1 = 0;
         int c1 = 0;
@@ -50,6 +53,13 @@ class Data {
         char singleQuote = '\'';
         char doubleQuote = '\"';
         char backslash = '\\';
+
+        // Arrays
+        int[] anArray = new int[10];
+        int[] filledArray = {1, 2, 3};
+        // array.length
+        Arrays.equals(anArray, filledArray);
+        Arrays.fill(anArray, 2);
 
     }
 
