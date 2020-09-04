@@ -1,2 +1,5 @@
+# Misc.
+*.sw[p,o]
+
 # Java
 *.class
