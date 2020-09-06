@@ -1,0 +1,8 @@
+1. Regex matching repeated words
+\b(\w+)(\s\1){1,}\b
+
+2. Java regex.Pattern flag for case-insensitivity
+Pattern.CASE_INSENSITIVE
+
+3. Arguments for replaceAll() to replace repeated words by the first instance
+input.replaceAll(m.group(), m.group(1));
