@@ -9,3 +9,4 @@ A quick personal recap of Java.
   * Imprecise and incomplete specifications
   * Lacks overall consistency
   * Awkward code boilerplates
+  * Awkward input/output formatting
