@@ -1,0 +1,4 @@
+Student.class
+student.getDeclaredMethods()
+Method method: methods
+method.getName()

@@ -1,0 +1,4 @@
+Solution.Inner staticInner = new Solution.Inner();
+o = staticInner.new Private();
+Solution.Inner.Private innerPrivate = (Solution.Inner.Private) o;
+System.out.format("%d is %s%n", num, innerPrivate.powerof2(num));
