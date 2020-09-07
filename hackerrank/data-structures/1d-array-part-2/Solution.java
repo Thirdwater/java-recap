@@ -2,6 +2,29 @@ import java.util.Scanner;
 
 public class Solution {
 
+    public static void main (String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            int numQueries = scanner.nextInt();
+            assert 1 <= numQueries && numQueries <= 5_000;
+
+            for (int query = 0; query < numQueries; query++) {
+                int gameSize = scanner.nextInt();
+                int leap = scanner.nextInt();
+                assert 2 <= gameSize && gameSize <= 100;
+                assert 0 <= leap && leap <= 100;
+
+                int[] gameBoard = new int[gameSize];
+                for (int cell = 0; cell < gameSize; cell++) {
+                    gameBoard[cell] = scanner.nextInt();
+                }
+                assert gameBoard[0] == 0;
+
+                boolean isWinnable = Solution.canWin(gameBoard, leap);
+                System.out.println(isWinnable? "YES": "NO");
+            }
+        }
+    }
+
     public static boolean canWin (int[] gameBoard, int leap) {
         return Solution.recursiveCanWin(gameBoard, leap, 0);
     }
@@ -36,29 +59,6 @@ public class Solution {
             winByLeap = Solution.recursiveCanWin(gameBoard, leap, position + leap);
         }
         return winByForward || winByBackward || winByLeap;
-    }
-
-    public static void main (String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            int numQueries = scanner.nextInt();
-            assert 1 <= numQueries && numQueries <= 5_000;
-
-            for (int query = 0; query < numQueries; query++) {
-                int gameSize = scanner.nextInt();
-                int leap = scanner.nextInt();
-                assert 2 <= gameSize && gameSize <= 100;
-                assert 0 <= leap && leap <= 100;
-
-                int[] gameBoard = new int[gameSize];
-                for (int cell = 0; cell < gameSize; cell++) {
-                    gameBoard[cell] = scanner.nextInt();
-                }
-                assert gameBoard[0] == 0;
-
-                boolean isWinnable = Solution.canWin(gameBoard, leap);
-                System.out.println(isWinnable? "YES": "NO");
-            }
-        }
     }
 
 }
