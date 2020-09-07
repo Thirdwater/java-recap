@@ -8,7 +8,7 @@ A quick personal recap of Java.
   * Careful not to blindly apply every items everywhere
 * [HackerRank](https://www.hackerrank.com)
   * Imprecise and incomplete specifications
-  * Lacks overall consistency
+  * Very inconsistent
   * Awkward code boilerplates
   * Awkward input/output formatting
-  * Buggy web interface
+  * Poor web interface
