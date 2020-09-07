@@ -11,4 +11,5 @@ A quick personal recap of Java.
   * Very inconsistent
   * Awkward code boilerplates
   * Awkward input/output formatting
+  * Awkward design choices
   * Poor web interface
