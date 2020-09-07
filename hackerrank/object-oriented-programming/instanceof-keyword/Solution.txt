@@ -1,0 +1,3 @@
+element instanceof Student
+element instanceof Rockstar
+element instanceof Hacker
