@@ -13,3 +13,4 @@ A quick personal recap of Java.
   * Awkward input/output formatting
   * Awkward design choices
   * Poor web interface
+  * Poor coding practices
