@@ -1,0 +1,5 @@
+int budgetLimit() default 0;
+@FamilyBudget(userRole = "SENIOR", budgetLimit = 100)
+@FamilyBudget(userRole = "JUNIOR", budgetLimit = 50)
+family.budgetLimit();
+spend <= budgetLimit
