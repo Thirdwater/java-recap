@@ -8,9 +8,11 @@ A quick personal recap of Java.
   * Careful not to blindly apply every items everywhere
 * [LeetCode](https://leetcode.com)
   * Sufficient and timed test cases
+  * Some walled challenges
 * [HackerRank](https://www.hackerrank.com)
   * Imprecise and incomplete specifications
   * Very inconsistent
+  * Walled test cases
   * Awkward code boilerplates
   * Awkward input/output formatting
   * Awkward design choices
